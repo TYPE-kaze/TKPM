@@ -71,6 +71,10 @@ mà ngay từ đầu có khái niệm part-time và full-time không
 ### Lương cho nhân viên tính như thế nào ?
 Theo giờ, ca, chức vụ ...
 
+### Thưởng phạt như nào?
+- Đi làm muộn, bỏ ca không thông báo, bỏ ca có thông báo thì xử lí như nào? Ghi chép lại như nào? ví dụ: fulltime: số ca muộn x số tiền phạt / số ca bỏ không thông báo x số tiền phạt, ...
+- Có thưởng không? thưởng như nào? Có tiêu chí cụ thể không? có cố phải hoạt động xảy ra nhiều lần không? (ví dụ:nhân viên top 1 tháng)
+
 ## Cơ sở vật chất/Trang thiết bị
 Coi một nhóm chủ yếu gồm ghế, bàn (có thể gồm mấy thứ linh tinh như kiểu ô, quạt thảm trải chân, trải bàn ...) là một _chỗ ngồi_. (Khách vào quán phải ngồi vào một chỗ, chỗ đấy có những cái gì)
 
@@ -89,15 +93,56 @@ chảo, máy say sinh tố , máy pha cà phê, ...
 
 ### Họ nhập các vật dụng liệt kê trong mục này như thế nào ?
 mua ở chợ, siêu thị, ... hay đặt hàng ở một đơn vị, công ty nào đấy cung cấp 
-
+### Khi cần mua thêm cơ sở vật chất, trang thiết bị thì như nào ?
+- Quy trình mua:
+  + Khi nào thì biết cần mua mới, bổ sung: thiếu, hỏng, mất, ...
+  + Ai là người kiểm tra xem có đúng là cần mua không
+  + Ai là người chịu trách nhiệm đặt mua: chủ cửa hàng, quản lý, ...?
+  + Ai là người kiểm hàng, giải ngân: chủ cửa hàng, quản lý, ...?
+- Các đồ bán đem đi (ống hút, cốc nhựa, túi, ...) được quyết định số lượng nhập về như nào? kiểm soát nó như nào?
+  + Hệ thống kiểm tra số cốc bán đem đi rồi thực hiện tính toán?
+  + Có sự khác nhau về dụng cụ ăn uống (cốc, thìa, dĩa, ống hút,...) khi khách dùng tại quán so với khi khách đem đi không?
+  + Nếu có khác nhau (dùng tại quán thì cốc, thìa, dĩa là hàng dùng nhiều lần của quán, còn đem đi thì là cốc nhựa) thì có ghi chép gì lại không? ví dụ có một trường dữ liệu để ghi lại -> mục đích là để kiểm tra số lượng đồ dùng đưa cho khách (nếu chỉ bán ngồi tại quán thì bỏ qua)
+      
+### Kiểm soát cơ sở vật chất, trang thiết bị như nào?
+- Kiểm soát số lượng, tình trạng như nào: Ghi chép vào đấu đó? Nhập vào hệ thống? Không kiểm soát?
+- Khi phát hiện thất thoát (ví dụ như cốc đồ uống bán đem đi bị chênh lệch so với tổng số cốc - số cốc bán đem đi) thì xử lý như nào? Ai là người đứng ra xử lý? Ai là người chịu trách nhiệm (nhân viên ca đó, quản lý ca đó,...)?
+- Khi khách làm hỏng đồ thì xử lý như nào? có yêu cầu bồi thường không? nếu bồi thường thì có ghi chép lại không? tiền khách bồi thường sẽ tính vào phần nào? -> về mặt quản lý chi phí
 ## Nguyên liệu /thực phẩm
 ### Họ nhập nguyên liệu nấu ăn như thế nào ? Nếu một nguyên liệu cụ thể (vd: hạt cà phê) có phương pháp nhập riêng thì là nguyên liệu gì và như thế nào ? 
-Kiểu sáng ra chợ mua, cuối tuần đi mua một lô về dùng cho cả tuần/tháng. Có thể kết hợp nhiều phương thức khác nhau tùy thuộc vào tính chất từng nguyên liệu 
-
+- Kiểu sáng ra chợ mua, cuối tuần đi mua một lô về dùng cho cả tuần/tháng. Có thể kết hợp nhiều phương thức khác nhau tùy thuộc vào tính chất từng nguyên liệu 
 ### Họ bảo quản nguyên liệu như thế nào ? 
 Cho vào tủ lạnh ?
 
+### Xử lí hàng tồn như nào?
+- Nếu hàng hết hạn sử dụng thì xử lý như nào: ghi chép vào trong hệ thống như nào?
+- Nếu hàng bị hỏng (lí do khách quan: do bên cấp hàng, do bảo quản có vấn đề?) thì xử lí như nào
+  
+### Mua nguyên liệu 
+- Ai là người mua nguyên liệu?
+- Ai là người kiểm đếm số lượng nguyên liệu đầu vào?
+- Ai là người thanh toán tiền nguyên liệu?
+- Mua nguyên liệu theo chu kì nào: ngày, tuần, tháng?
+- Trả tiền như nào:
+  + Mua lần nào trả tiền lần đấy
+  + Gộp nhiều lần mua vào rồi trả 1 thể: ví dụ nguyên liệu giao đến hàng ngày, cuối tháng mới tổng kết lại để thanh toán
+  + Ai làm việc này: kiểm kê, xác nhận số lượng nguyên liệu khớp với đơn đặt hàng
+- Khi phát sinh sự cố thì như nào:
+  + Khi số liệu của cửa hàng khác với số liệu đưa ra từ bên cung cấp (ví dụ bên cung cấp bảo mua 10 gói cà phê phân chồn nhưng số liệu ghi chép của quán chỉ nhập về 5 gói)
+  + Khi hàng được giao tới khác so với đơn đặt hàng: yêu cầu hoàn trả?, giao lại?, không nhận hàng?, vẫn nhận nhưng liên lạc với bên cung cấp để xác nhận?
+  + 
+  
 ## Tiền quỹ/doanh thu‌/tài chính
+- Tổng hợp doanh thu như nào (các trường thông tin - hỏi được thì tốt :))) )
+- Tiền nguyên vật liệu (như trên)
+- Lương nhân viên
+- Tiền mặt bằng
+- Chi phí phụ (liệt kê đủ ra): ví dụ: điện, nước, các loại phí khác phải đóng hàng kì (tháng/năm??)
+- Chi phí rủi ro: khách làm hỏng đồ? Người pha chế lỡ tay rớt đồ, nhân viên phục vụ trượt tay bay đồ uống của khách -> đền bù như nào? nếu làm lại cho khách cốc khác thì 1 cốc bị hụt đi phải ghi chép như nào?
+- Thuê 1 bên khác đến training cho nhân viên (pha chế, phục vụ, ... -> thường là training pha chế) ? Tự chủ quán training nhân viên?
+- Lợi nhuận của cửa hàng
+- Các mục tiền liệt kê ở trên được theo dõi theo ngày, theo tuần, theo tháng hay theo năm???
+- Nếu các loại khác nhau được theo dõi trên các khoảng thời gian khác nhau thì cụ thể là như nào? ví dụ: doanh số bán hàng theo dõi từng ngày, nhập nguyên liệu thì theo từng tuần hoặc từng tháng
 
 ## Các quy trình công việc khác  
 ### Phân lịch làm việc cho nhân viên như thế nào ?
